@@ -1,0 +1,468 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convertXLSXToJSON should merge and nest header cells 1`] = `
+[
+  {
+    "Colour": "999B",
+    "Ending": {
+      "Amount": 150,
+      "Units": 3,
+    },
+    "Reference": "AC027",
+    "Shipped": {
+      "Amount": 150,
+      "Units": 3,
+    },
+    "Starting": {
+      "Amount": 250,
+      "Units": 5,
+    },
+    "Transferred": {
+      "Amount": 50,
+      "Units": 1,
+    },
+    "Unit Cost": 50,
+  },
+  {
+    "Colour": "001W",
+    "Ending": {
+      "Amount": 120,
+      "Units": 4,
+    },
+    "Reference": "AC027",
+    "Shipped": {
+      "Amount": 30,
+      "Units": 1,
+    },
+    "Starting": {
+      "Amount": 90,
+      "Units": 3,
+    },
+    "Transferred": {
+      "Amount": 60,
+      "Units": 2,
+    },
+    "Unit Cost": 30,
+  },
+]
+`;
+
+exports[`convertXLSXToJSON should merge header cells 1`] = `
+[
+  {
+    "Test A": {
+      "Bob": 1,
+      "John": 2,
+      "Thom": 3,
+    },
+    "Test B": {
+      "Bob": "a",
+      "John": "b",
+      "Thom": "c",
+    },
+    "Test C": {
+      "Bob": "2021-12-30T23:00:00.000Z",
+      "John": "2021-11-23T23:00:00.000Z",
+      "Thom": "2021-10-11T22:00:00.000Z",
+    },
+  },
+]
+`;
+
+exports[`convertXLSXToJSON should open CSV file (Buffer) and convert contents to array table data 1`] = `
+[
+  {
+    "Test A": 1,
+    "Test B": 2,
+    "Test C": 3,
+  },
+  {
+    "Test A": "a",
+    "Test B": "b",
+    "Test C": "c",
+  },
+  {
+    "Test A": "2021-12-30T23:00:00.000Z",
+    "Test B": "2021-11-23T23:00:00.000Z",
+    "Test C": "2021-10-11T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`convertXLSXToJSON should open CSV file (local path string) and convert contents to array table data 1`] = `
+[
+  {
+    "Test A": 1,
+    "Test B": 2,
+    "Test C": 3,
+  },
+  {
+    "Test A": "a",
+    "Test B": "b",
+    "Test C": "c",
+  },
+  {
+    "Test A": "2021-12-30T23:00:00.000Z",
+    "Test B": "2021-11-23T23:00:00.000Z",
+    "Test C": "2021-10-11T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`convertXLSXToJSON should open XLSX file (Buffer) and convert contents to array table data 1`] = `
+[
+  {
+    "Test A": 1,
+    "Test B": 2,
+    "Test C": 3,
+  },
+  {
+    "Test A": "a",
+    "Test B": "b",
+    "Test C": "c",
+  },
+  {
+    "Test A": "2021-12-30T23:00:00.000Z",
+    "Test B": "2021-11-23T23:00:00.000Z",
+    "Test C": "2021-10-11T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`convertXLSXToJSON should open XLSX file (local path string) and convert contents to array table data 1`] = `
+[
+  {
+    "Test A": 1,
+    "Test B": 2,
+    "Test C": 3,
+  },
+  {
+    "Test A": "a",
+    "Test B": "b",
+    "Test C": "c",
+  },
+  {
+    "Test A": "2021-12-30T23:00:00.000Z",
+    "Test B": "2021-11-23T23:00:00.000Z",
+    "Test C": "2021-10-11T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`convertXLSXToJSON should open XLSX file (remote HTTP URL) and convert contents to array table data 1`] = `
+[
+  {
+    "Test A": 1,
+    "Test B": 2,
+    "Test C": 3,
+  },
+  {
+    "Test A": "a",
+    "Test B": "b",
+    "Test C": "c",
+  },
+  {
+    "Test A": "2021-12-30T23:00:00.000Z",
+    "Test B": "2021-11-23T23:00:00.000Z",
+    "Test C": "2021-10-11T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`convertXLSXToJSON should pick out a specific sheet by zero-based index 1`] = `
+{
+  "1": {
+    "Test B": 2,
+    "Test C": 3,
+  },
+  "2021-12-30T23:00:00.000Z": {
+    "Test B": "2021-11-23T23:00:00.000Z",
+    "Test C": "2021-10-11T22:00:00.000Z",
+  },
+  "a": {
+    "Test B": "b",
+    "Test C": "c",
+  },
+}
+`;
+
+exports[`convertXLSXToJSON should use XLSX data (xlsx.Workbook) and convert contents to array table data 1`] = `
+[
+  {
+    "Test A": 1,
+    "Test B": 2,
+    "Test C": 3,
+  },
+  {
+    "Test A": "a",
+    "Test B": "b",
+    "Test C": "c",
+  },
+  {
+    "Test A": "2021-12-30T23:00:00.000Z",
+    "Test B": "2021-11-23T23:00:00.000Z",
+    "Test C": "2021-10-11T22:00:00.000Z",
+  },
+]
+`;
+
+exports[`convertXlsxToTableData should open CSV file (Buffer) and convert contents to array table data 1`] = `
+[
+  [
+    "Test A",
+    "Test B",
+    "Test C",
+  ],
+  [
+    1,
+    2,
+    3,
+  ],
+  [
+    "a",
+    "b",
+    "c",
+  ],
+  [
+    "2021-12-30T23:00:00.000Z",
+    "2021-11-23T23:00:00.000Z",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should open CSV file (local path string) and convert contents to array table data 1`] = `
+[
+  [
+    "Test A",
+    "Test B",
+    "Test C",
+  ],
+  [
+    1,
+    2,
+    3,
+  ],
+  [
+    "a",
+    "b",
+    "c",
+  ],
+  [
+    "2021-12-30T23:00:00.000Z",
+    "2021-11-23T23:00:00.000Z",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should open XLSX file (Buffer) and convert contents to array table data 1`] = `
+[
+  [
+    "Test A",
+    "Test B",
+    "Test C",
+    ,
+    ,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  [
+    1,
+    2,
+    3,
+  ],
+  [
+    "a",
+    "b",
+    "c",
+  ],
+  [
+    "2021-12-30T23:00:00.000Z",
+    "2021-11-23T23:00:00.000Z",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should open XLSX file (local path string) and convert contents to array table data 1`] = `
+[
+  [
+    "Test A",
+    "Test B",
+    "Test C",
+    ,
+    ,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  [
+    1,
+    2,
+    3,
+  ],
+  [
+    "a",
+    "b",
+    "c",
+  ],
+  [
+    "2021-12-30T23:00:00.000Z",
+    "2021-11-23T23:00:00.000Z",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should open XLSX file (remote HTTP URL) and convert contents to array table data 1`] = `
+[
+  [
+    "Test A",
+    "Test B",
+    "Test C",
+    ,
+    ,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  [
+    1,
+    2,
+    3,
+  ],
+  [
+    "a",
+    "b",
+    "c",
+  ],
+  [
+    "2021-12-30T23:00:00.000Z",
+    "2021-11-23T23:00:00.000Z",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should pick out a specific sheet by name 1`] = `
+[
+  [
+    "Test A",
+    1,
+    "a",
+    "2021-12-30T23:00:00.000Z",
+  ],
+  [
+    "Test B",
+    2,
+    "b",
+    "2021-11-23T23:00:00.000Z",
+  ],
+  [
+    "Test C",
+    3,
+    "c",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should pick out a specific sheet by zero-based index 1`] = `
+[
+  [
+    "Test A",
+    1,
+    "a",
+    "2021-12-30T23:00:00.000Z",
+  ],
+  [
+    "Test B",
+    2,
+    "b",
+    "2021-11-23T23:00:00.000Z",
+  ],
+  [
+    "Test C",
+    3,
+    "c",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should use XLSX data (xlsx.WorkBook) and convert contents to array table data 1`] = `
+[
+  [
+    "Test A",
+    "Test B",
+    "Test C",
+    ,
+    ,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  [
+    1,
+    2,
+    3,
+  ],
+  [
+    "a",
+    "b",
+    "c",
+  ],
+  [
+    "2021-12-30T23:00:00.000Z",
+    "2021-11-23T23:00:00.000Z",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
+
+exports[`convertXlsxToTableData should use XLSX data (xlsx.Workbook) and convert contents to array table data 1`] = `
+[
+  [
+    "Test A",
+    "Test B",
+    "Test C",
+    ,
+    ,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  [
+    1,
+    2,
+    3,
+  ],
+  [
+    "a",
+    "b",
+    "c",
+  ],
+  [
+    "2021-12-30T23:00:00.000Z",
+    "2021-11-23T23:00:00.000Z",
+    "2021-10-11T22:00:00.000Z",
+  ],
+]
+`;
